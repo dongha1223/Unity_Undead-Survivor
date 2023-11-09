@@ -372,6 +372,55 @@ Transform:
   m_Children: []
   m_Father: {fileID: 915159129}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &494460907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 494460908}
+  - component: {fileID: 494460909}
+  m_Layer: 0
+  m_Name: Weapon 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &494460908
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494460907}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 754305918}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &494460909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 494460907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa4b47bec9c82a74794302aa338e65a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  prefabId: 1
+  damage: 11
+  count: 2
+  speed: 0
 --- !u!1 &504248399
 GameObject:
   m_ObjectHideFlags: 3
@@ -880,7 +929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 4953863212914492009, guid: 429aa2f29b4e5f7409387be3551ff85f, type: 3}
-  - {fileID: 464724614257061927, guid: b6e92801dd6e48b4aa132de8913e48f0, type: 3}
+  - {fileID: 709349259447711003, guid: b5f03dd7905f5e14fb3e675fa4d51b5c, type: 3}
 --- !u!4 &675123143
 Transform:
   m_ObjectHideFlags: 0
@@ -1101,6 +1150,7 @@ Transform:
   - {fileID: 703869187}
   - {fileID: 68172020}
   - {fileID: 915159129}
+  - {fileID: 494460908}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &754305919
@@ -18825,7 +18875,7 @@ SceneRoots:
   - {fileID: 668346040}
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 754305918}
-  - {fileID: 871458046}
   - {fileID: 326104957}
   - {fileID: 675123143}
+  - {fileID: 871458046}
+  - {fileID: 754305918}
