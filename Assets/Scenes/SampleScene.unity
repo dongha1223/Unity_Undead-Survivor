@@ -264,6 +264,10 @@ MonoBehaviour:
   maxGameTime: 40
   pool: {fileID: 675123142}
   player: {fileID: 754305921}
+  level: 0
+  kill: 0
+  exp: 0
+  nextExp: 0a0000001e0000003c0000006400000096000000d20000001801000068010000c201000058020000
 --- !u!4 &326104957
 Transform:
   m_ObjectHideFlags: 0
@@ -1173,7 +1177,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1419603818, guid: 99a24620d31e5ce4e823c32d11e17c2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
