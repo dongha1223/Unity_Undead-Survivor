@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public Player player;
 
     [Header("# Player Info")]
+    public int health;
+    public int maxHealth;
     public int level;
     public int kill;
     public int exp;
@@ -25,6 +27,10 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
+    void Start()
+    {
+        health = maxHealth;
+    }
     void Update()
     {
         gameTime += Time.deltaTime;
