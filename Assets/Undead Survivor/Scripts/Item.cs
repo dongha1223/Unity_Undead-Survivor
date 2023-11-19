@@ -36,7 +36,7 @@ public class Item : MonoBehaviour
         {
             case ItemData.ItemType.Melee:
             case ItemData.ItemType.Range:
-                textDesc.text = string.Format(data.itemDesc,data.damages[level] * 100,data.counts[level]);
+                textDesc.text = string.Format(data.itemDesc, data.damages[level] * 100,data.counts[level]);
                 break;
             case ItemData.ItemType.Glove:
             case ItemData.ItemType.Shoe:

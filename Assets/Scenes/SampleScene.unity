@@ -670,15 +670,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 0
-  maxGameTime: 40
+  maxGameTime: 300
+  isLive: 1
   pool: {fileID: 675123142}
   player: {fileID: 754305921}
+  uiLevelUp: {fileID: 2000557481}
   health: 0
   maxHealth: 100
   level: 0
   kill: 0
   exp: 0
-  nextExp: 0a0000001e0000003c0000006400000096000000d20000001801000068010000c201000058020000
+  nextExp: 05000000050000000500000005000000050000000500000005000000050000000500000005000000
 --- !u!4 &326104957
 Transform:
   m_ObjectHideFlags: 0
@@ -726,10 +728,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1604609197}
   - {fileID: 1103440949}
   - {fileID: 512092499}
   - {fileID: 671889108}
+  - {fileID: 1604609197}
   m_Father: {fileID: 1182484901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -784,6 +786,18 @@ MonoBehaviour:
       - m_Target: {fileID: 340448245}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
         m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000557481}
+        m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1473,7 +1487,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.611111
+  orthographic size: 8.555555
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1854,7 +1868,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 340448241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2069,10 +2083,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1473891518}
   - {fileID: 349461878}
   - {fileID: 1558963914}
   - {fileID: 498874746}
+  - {fileID: 1473891518}
   m_Father: {fileID: 1182484901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2143,6 +2157,18 @@ MonoBehaviour:
       - m_Target: {fileID: 735203536}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
         m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000557481}
+        m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2775,10 +2801,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1678910004}
   - {fileID: 1864710593}
   - {fileID: 1944336852}
   - {fileID: 1681315939}
+  - {fileID: 1678910004}
   m_Father: {fileID: 1182484901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -2849,6 +2875,18 @@ MonoBehaviour:
       - m_Target: {fileID: 909447965}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
         m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000557481}
+        m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3075,10 +3113,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1227194681}
   - {fileID: 1469512987}
   - {fileID: 576733408}
   - {fileID: 1682804400}
+  - {fileID: 1227194681}
   m_Father: {fileID: 1182484901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -3149,6 +3187,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1100305991}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
         m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000557481}
+        m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8662,7 +8712,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1927685392}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22428,10 +22478,10 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 264828903}
   - {fileID: 1678029406}
   - {fileID: 30269214}
   - {fileID: 1641250833}
+  - {fileID: 264828903}
   m_Father: {fileID: 1182484901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -22502,6 +22552,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1927685393}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
         m_MethodName: Onclick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2000557481}
+        m_TargetAssemblyTypeName: LevelUp, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22701,6 +22763,7 @@ GameObject:
   - component: {fileID: 2000557478}
   - component: {fileID: 2000557480}
   - component: {fileID: 2000557479}
+  - component: {fileID: 2000557481}
   m_Layer: 5
   m_Name: LevelUp
   m_TagString: Untagged
@@ -22717,8 +22780,8 @@ RectTransform:
   m_GameObject: {fileID: 2000557477}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1045235218}
   m_Father: {fileID: 1130481194}
@@ -22766,6 +22829,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000557477}
   m_CullTransparentMesh: 1
+--- !u!114 &2000557481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000557477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 735c49a34927bfc4faf65c05bc6f5bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2009020884
 GameObject:
   m_ObjectHideFlags: 0
