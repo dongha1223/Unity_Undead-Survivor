@@ -52,4 +52,22 @@ public class Player : MonoBehaviour
 
         rigid.MovePosition(rigid.position + nextVec); //위치이동 방식 (기존 위치 + inputVec을 더하여 원하는 위치로 이동)
     }
+
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        if (!GameManager.instance.isLive)
+            return;
+
+        GameManager.instance.health -= Time.deltaTime * 10;
+
+        if (GameManager.instance.health < 0)
+        {
+            for(int index=2; index < transform.childCount; index++)
+            {
+                transform.GetChild(index).gameObject.SetActive(false);
+            }
+
+            anim.SetTrigger("Dead");
+        }
+    }
 }

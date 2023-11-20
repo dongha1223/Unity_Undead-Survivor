@@ -17,8 +17,8 @@ public class GameManager : MonoBehaviour
     public LevelUp uiLevelUp;
 
     [Header("# Player Info")]
-    public int health;
-    public int maxHealth;
+    public float health;
+    public float maxHealth;
     public int level;
     public int kill;
     public int exp;
@@ -29,12 +29,13 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    void Start()
+    public void GameStart()
     {
         health = maxHealth;
 
         //임시 스크립트
         uiLevelUp.Select(0);
+        isLive = true;
     }
     void Update()
     {
