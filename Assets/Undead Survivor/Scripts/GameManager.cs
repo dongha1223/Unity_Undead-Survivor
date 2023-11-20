@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     public PoolManager pool;
     public Player player;
     public LevelUp uiLevelUp;
+    public GameObject uiResult;
 
     [Header("# Player Info")]
     public float health;
@@ -37,6 +39,27 @@ public class GameManager : MonoBehaviour
         uiLevelUp.Select(0);
         isLive = true;
     }
+
+    public void GameOver()
+    {
+        StartCoroutine(GameOverRouitne());
+    }
+
+    IEnumerator GameOverRouitne()
+    {
+        isLive = false;
+
+        yield return new WaitForSeconds(0.5f);
+
+        uiResult.SetActive(true);
+        Stop();
+    }
+
+    public void GameRetry()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     void Update()
     {
         if (!isLive)
