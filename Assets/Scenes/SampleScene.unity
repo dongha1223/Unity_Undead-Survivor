@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 4547920}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.02, y: 9.68, z: 0}
+  m_LocalPosition: {x: 10.68, y: 9.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameTime: 0
-  maxGameTime: 30
+  maxGameTime: 300
   isLive: 0
   pool: {fileID: 675123142}
   player: {fileID: 754305921}
@@ -910,7 +910,7 @@ MonoBehaviour:
   level: 0
   kill: 0
   exp: 0
-  nextExp: 05000000050000000500000005000000050000000500000005000000050000000500000005000000
+  nextExp: 03000000050000000a0000005000000096000000d20000001801000068010000c201000058020000
 --- !u!4 &326104957
 Transform:
   m_ObjectHideFlags: 0
@@ -1288,7 +1288,7 @@ Transform:
   m_GameObject: {fileID: 372909966}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.67, y: -9.46, z: 0}
+  m_LocalPosition: {x: 10.37, y: -10.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1319,7 +1319,7 @@ Transform:
   m_GameObject: {fileID: 403165972}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.49, y: -9.46, z: 0}
+  m_LocalPosition: {x: -10.66, y: -10.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1852,7 +1852,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 8.555555
+  orthographic size: 8.611111
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2095,7 +2095,7 @@ Transform:
   m_GameObject: {fileID: 584789498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.71, y: -10.13, z: 0}
+  m_LocalPosition: {x: -4.94, y: -10.27, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3821,7 +3821,7 @@ Transform:
   m_GameObject: {fileID: 805555689}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.68, y: -10.17, z: 0}
+  m_LocalPosition: {x: 4.73, y: -10.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4304,6 +4304,7 @@ MonoBehaviour:
     spawnTime: 0.5
     health: 15
     speed: 2.5
+  levelTime: 0
 --- !u!1 &950471413
 GameObject:
   m_ObjectHideFlags: 0
@@ -5926,7 +5927,7 @@ Transform:
   m_GameObject: {fileID: 1281635939}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.53, y: 8.93, z: 0}
+  m_LocalPosition: {x: -10.28, y: 9.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7000,7 +7001,7 @@ Transform:
   m_GameObject: {fileID: 1525163098}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.09, y: 10.27, z: 0}
+  m_LocalPosition: {x: -5.51, y: 10.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20826,7 +20827,7 @@ Transform:
   m_GameObject: {fileID: 1766250541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.73, y: -0.04, z: 0}
+  m_LocalPosition: {x: 11.45, y: -0.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25942,7 +25943,7 @@ Transform:
   m_GameObject: {fileID: 1945707493}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.99, y: 5.16, z: 0}
+  m_LocalPosition: {x: -11.35, y: 5.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25973,7 +25974,7 @@ Transform:
   m_GameObject: {fileID: 1966941438}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.41, y: -5.23, z: 0}
+  m_LocalPosition: {x: -11.39, y: -5.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
