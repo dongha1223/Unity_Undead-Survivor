@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     public Player player;
     public LevelUp uiLevelUp;
     public Result uiResult;
+    public Transform uiJoy;
     public GameObject enemyCleaner;
 
     [Header("# Player Info")]
@@ -127,11 +128,13 @@ public class GameManager : MonoBehaviour
     {
         isLive = false;
         Time.timeScale = 0;
+        uiJoy.localScale = Vector3.zero;
     }
 
     public void Resume()
     {
         isLive = true;
         Time.timeScale = 1;
+        uiJoy.localScale = Vector3.one;
     }
 }
